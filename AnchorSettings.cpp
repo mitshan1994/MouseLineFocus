@@ -3,7 +3,7 @@
 
 #include <QDir>
 
-#define SETTINGS_FILE "AnchorLines.ini"
+#define SETTINGS_FILE "MouseLineFocus.ini"
 #define PROFILE_SUB_DIR "profiles"
 
 AnchorSettings *AnchorSettings::s_instance = nullptr;
