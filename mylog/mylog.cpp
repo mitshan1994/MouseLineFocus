@@ -2,20 +2,17 @@
 #include "spdlog/sinks/stdout_color_sinks.h" // or "../stdout_sinks.h" if no colors needed
 #include "spdlog/sinks/daily_file_sink.h"
 
+#include <QDir>
 #include <iostream>
 #include <string>
-#include <boost/filesystem.hpp>
 
 static bool g_bInited = false;
 
 // Create directory, return 0 if success.
 static int CreateDir(const char* dirPath)
 {
-    try {
-      boost::filesystem::create_directories(dirPath);
-    } catch (std::exception e) {
-    	return -1;
-    }
+	QDir dir;
+    Q_UNUSED(dir.mkdir(dirPath))
 
     return 0;
 }

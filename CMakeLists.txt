@@ -70,11 +70,6 @@ endif()
 
 target_include_directories(MouseLineFocus PRIVATE 
     mylog
-    $ENV{BOOST74_INC_DIR}
-)
-
-target_link_directories(MouseLineFocus PRIVATE 
-	$ENV{BOOST74_LIB_DIR}
 )
 
 target_link_libraries(MouseLineFocus PRIVATE 
