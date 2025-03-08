@@ -1,3 +1,9 @@
 build
 *.user
 bin
+out
+.vs
+
+# Now ignore these.
+CMakePresets.json
+CMakeUserPresets.json
